@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/prayerbg"
+        android:scaleType="centerCrop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:paddingTop="60dp">
+
+        <!-- Prayer times row -->
+        <LinearLayout
+            android:id="@+id/prayerTimesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:gravity="top|center_horizontal">
+
+            <!-- Fajr -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/fajrLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fajr"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/fajrTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Dhuhr -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/dhuhrLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhuhr"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/dhuhrTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Asr -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/asrLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asr"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/asrTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Maghrib -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/maghribLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maghrib"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/maghribTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Isha -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ishaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isha"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/ishaTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Current prayer below -->
+        <TextView
+            android:id="@+id/currentPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Current prayer:"
+            android:textSize="40sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#FFFFFF"
+            android:paddingTop="50dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/currentPrayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="50sp"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </LinearLayout>
+</FrameLayout>
