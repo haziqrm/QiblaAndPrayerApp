@@ -1,2 +1,2 @@
 # Qibla and Prayer App
-Qibla and Prayer app that calculates and displays the direction to prayer and is updated with live prayer times depending on the user's location and timezone
+Qibla and Prayer app that calculates and displays the direction to prayer and is updated with live prayer times depending on the user's location and timezone. Uses Esri's SDK for ArcGIS to locate nearby mosques.
